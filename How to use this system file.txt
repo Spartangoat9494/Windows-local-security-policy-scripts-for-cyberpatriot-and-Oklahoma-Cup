@@ -1,0 +1,13 @@
+You will need to copy the master_check file to the C: drive outside of all the folders.
+
+Then open powershell and run this command and type y when prompted.
+
+
+secedit.exe /configure /db C:\Windows\Security\Database\master_check.sdb /cfg C:\master_check.inf /overwrite
+
+gpupdate /force
+
+
+
+
+It should overwrite the local policies.
